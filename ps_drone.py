@@ -379,6 +379,8 @@ class Drone(object):
 		except:	speed=self.__speed
 		self.move( self.__checkSpeedValue(speed),0.0,0.0,0.0)
   
+ # **************************************************************************************** 
+ # This function has been written and added during this project, it was not part of the library before. 
 	def moveAll(self, arg1, arg2, arg3):
 		try:	speed=arg1
 		except:	speed=self.__speed
@@ -391,6 +393,7 @@ class Drone(object):
             self.__checkSpeedValue(speed_1),
             self.__checkSpeedValue(speed_2),
             0.0)
+# **************************************************************************************** 
 
 	def moveForward(self,*args):
 		try:	speed=args[0]
